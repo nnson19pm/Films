@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Bánh Ú TV Watch Movies Anytime AnytimePlace">
+    <meta property="og:description" content="Programmed by Nguyễn Ngọc Sơn"> 
+    <meta property="og:image" content="https://nnson19pm.github.io/thumb/thumbnail.jpg">
+    
+    <title>Bánh Ú - TV</title>
+    <link rel="shortcut icon" href="./assets/img/movie-play-regular-48.png" type="image/x-icon">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- LESS -->
+    <link rel="stylesheet/less" href="./assets/css/app.less">
+    <link rel="stylesheet/less" href="./assets/css/base.less">
+</head>
+
+<body>
+    <!--NAV-->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="#" class="logo">
+                    <i class='bx bx-movie-play bx-tada main-color'></i>Bá<span class="main-color">n</span>h<span class="main-color">Ú</span><span class="tv">TV</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Genre</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">About</a></li>
+                    <li>
+                        <a href="#" class="btn btn-hover">
+                            <span>Sign in</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION -->
+        <div class="owl-carousel carousel-nav-center render-item-content" id="slider-section-header"></div>
+        <!--TOP MOVIES-->
+        <div class="top-movies-slide">
+            <div class="section">
+                <div class="container">
+                    <div class="section-header">
+                        TOP MOVIES
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel render-top-movies-slide" id="top-movies-slide"></div>
+        </div>
+        <!--SECTION MOVIES-->
+            <!--FIRST--->
+        <div class="section">
+            <div class="container">
+                <div class="section-header">
+                    MOVIES
+                </div>
+                <div class="movies-slide carousel-nav-center owl-carousel render-movies-slide"></div>
+            </div>
+        </div>
+            <!--TOP FIND-->
+        <div class="section">
+            <div class="container">
+                <div class="section-header">
+                   TOP FIND
+                </div>
+                <div class="carousel-nav-center owl-carousel render-top-find-movies-slide" id="render-top-find-movies"></div>
+            </div>
+        </div>
+            <!--SECOND - ANIME-->
+        <div class="section">
+            <div class="container">
+                <div class="section-header">
+                    ANIME MOVIES
+                </div>
+                <div class="movies-slide carousel-nav-center owl-carousel render-anime-movies-slide"></div>
+            </div>
+        </div>
+            <!--THIRD - VIEWS-->    
+        <div class="section">
+            <div class="container">
+                <div class="section-header">
+                    TOP VIEWS
+                </div>
+                <div class="carousel-nav-center owl-carousel render-views" id="views"></div>  
+            </div>
+        </div>
+            <!--FOURTH - SUMMER -->
+        <div class="section">
+            <div class="container">
+                <div class="section-header">
+                    What to watch this summer?
+                </div>
+                <div class="carousel-nav-center owl-carousel render-movies-summer" id="render-movies-summer"></div>
+            </div>
+        </div>  
+            <!-- RENTAL MOVIES-->
+        <div class="section">
+            <div class="container">
+                <div class="section-header">
+                    RENTAL MOVIES
+                </div>
+                <div class=" carousel-nav-center owl-carousel render-movies-rental-slide" id="render-movies-rental"></div>
+            </div>
+        </div>
+            <!--TV SERIES-->
+        <div class="section">
+            <div class="container">
+                <div class="section-header">
+                   TV SERIES
+                </div>
+                <div class="movies-slide carousel-nav-center owl-carousel render-tv-series-slide"></div>
+            </div>
+        </div>
+
+            <!--PRICING-->    
+        <div class="section">
+            <div class="container">
+                <div class="pricing">
+                    <div class="pricing-header">
+                        pr<span class="main-color">i</span>ci<span class="main-color">n</span>g
+                    </div>
+                    <div class="pricing-list">
+                        <div class="row">
+                            <div class="col-4 col-md-12 col-sm-12">
+                                <div class="pricing-box">
+                                    <div class="pricing-box-header">
+                                        <div class="pricing-name">
+                                            Basic
+                                        </div>
+                                        <div class="pricing-price">
+                                            Free
+                                        </div>
+                                    </div>
+                                    <div class="pricing-box-content">
+                                        <p>75+ Free</p>
+                                        <p>5 Views / 1 Movie</p>
+                                        <p><del>50+ Free</del></p>
+                                        <p><del>2 Views / 1 Movie</del></p>
+                                    </div>
+                                    <div class="pricing-box-action">
+                                        <a href="#" class="btn btn-hover">
+                                            <span>Register now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-12 col-sm-12">
+                                <div class="pricing-box highlight">
+                                    <div class="pricing-box-header">
+                                        <div class="pricing-name">
+                                            Premium
+                                        </div>
+                                        <div class="pricing-price">
+                                            $99.99 <span>/month</span>
+                                        </div>
+                                    </div>
+                                    <div class="pricing-box-content">
+                                        <p>Free All</p>
+                                        <p>HD / Full HD</p>
+                                        <p><del>Free Normal</del></p>
+                                        <p><del>HD</del></p>
+                                    </div>
+                                    <div class="pricing-box-action">
+                                        <a href="#" class="btn btn-hover">
+                                            <span>Register now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-12 col-sm-12">
+                                <div class="pricing-box">
+                                    <div class="pricing-box-header">
+                                        <div class="pricing-name">
+                                            VIP
+                                        </div>
+                                        <div class="pricing-price">
+                                            $199.99 <span>/month</span>
+                                        </div>
+                                    </div>
+                                    <div class="pricing-box-content">
+                                        <p>Free All</p>
+                                        <p>4K</p>
+                                        <p><del>Free All</del></p>
+                                        <p><del>HD / Full HD</del></p>
+                                    </div>
+                                    <div class="pricing-box-action">
+                                        <a href="#" class="btn btn-hover">
+                                            <span>Register now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- SPECIAL MOVIE SECTION -->
+        <div class="section">
+            <div class="slide-item">
+                <img src="./assets/img/bannerpokemoncoco.png" alt="">
+                <div class="overlay"></div>
+                <div class="slide-item-content">
+                    <div class="item-content-wraper">
+                        <img class="item-image" src="./assets/img/logococo.png" width="200px">        
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                        <div class="item-content-description">
+                            Gekijōban Pocket Monsters: Coco là một phim anime sắp ra mắt dựa theo thương hiệu truyền thông Pokémon của Tajiri Satoshi và do OLM sản xuất. Bộ phim là phim thứ 23 trong loạt phim điện ảnh Pokémon và là phim thứ ba thuộc xê-ri Dòng thời gian thay thế.
+                        </div>
+                        <div class="item-action">
+                            <a href="#" class="btn btn-hover">
+                                <i class="bx bxs-right-arrow"></i>
+                                <span>Watch now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    
+    <!--FOOTER-->
+    <div class="footer-wrapper section">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-6 col-sm-12">
+                    <div class="content">
+                        <a href="#" class="logo">
+                            <i class='bx bx-movie-play bx-tada main-color'></i>Bá<span class="main-color">n</span>h<span class="main-color">Ú</span><span class="tv">TV</span>
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut veniam ex quos hic id nobis beatae earum sapiente! Quod ipsa exercitationem officiis non error illum minima iusto et. Dolores, quibusdam?
+                        </p>
+                        <div class="social-list">
+                            <a href="#" class="social-item">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="fab fa-invision"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="fab fa-github-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Bánh Ú</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Browse</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>                       
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Contacts</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Address</a></li>
+                                    <li><a href="#"><i class="fas fa-phone-volume"></i>&nbsp;&nbsp;Phone</a></li>
+                                    <li><a href="#"><i class="fas fa-envelope"></i>&nbsp;&nbsp;Email</a></li>
+                                    <li><a href="#"><i class="fas fa-comment-dots"></i>&nbsp;&nbsp;Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Download app</b></p>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/img/google-play.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/img/app-store.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--BACK-TO-TOP-->
+    <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+</body>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <!--LESS JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/4.1.1/less.min.js" integrity="sha512-mE4RWRhILuNDWPx8sl5Q739XNbibSUZP9dEjdepzpYVw1kDco9ZZ5l/+KHAMffzXNHnmSWexMSN+OX137tNL5A==" crossorigin="anonymous"></script>
+    <!--APP JS-->
+    <script src="./assets/js/app.js"></script>
+</html>
+
